@@ -21,12 +21,12 @@ def dailyCaseClac(x):
 
 
 
-page_value  = st.sidebar.radio('Select Page', ['page_one', 'page_two'])
+page_value  = st.sidebar.radio('Select Page', ['Demo', 'Cases'])
 print(page_value)
 
 # This is the streamlit method explanation
 
-if page_value == 'page_one':
+if page_value == 'Demo':
 
     st.write('Hello World ***Accepts Markdown as well***')
     st.text('Hello World from Streamlit.text')
@@ -39,7 +39,7 @@ if page_value == 'page_one':
 
 
 
-if page_value == 'page_two':
+if page_value == 'Cases':
     st.header('Covid Cases')
 
     country_list = list(new_df['Country/Region'].unique())
