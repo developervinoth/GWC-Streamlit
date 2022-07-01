@@ -40,7 +40,7 @@ if page_value == 'page_one':
 
 
 if page_value == 'page_two':
-    st.header('Covid Dashboard')
+    st.header('Covid Cases')
 
     country_list = list(new_df['Country/Region'].unique())
     selectedCountry  = st.sidebar.selectbox('Select Country', country_list)
